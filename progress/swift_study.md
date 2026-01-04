@@ -17,4 +17,6 @@
         2. 在任意子 View 中声明，@EnvironmentObject var session: SessionManager
         【全局/多页面共享的 ObservableObject + 不想层层传递】
 
+    @Published 用在 ObservableObject 的属性上，作用是：当这个属性的值变化时，自动发通知给所有订阅者（包括 SwiftUI 的 View），从而触发界面刷新或其他响应。
+
 
